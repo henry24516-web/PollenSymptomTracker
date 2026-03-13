@@ -1,0 +1,30 @@
+{
+  "NSPrivacyTracking": false,
+  "NSPrivacyTrackingDomains": [],
+  "NSPrivacyCollectedDataTypes": [
+    {
+      "NSPrivacyCollectedDataType": "NSPrivacyCollectedDataTypeHealth",
+      "NSPrivacyCollectedDataTypeLinked": false,
+      "NSPrivacyCollectedDataTypeTracking": false,
+      "NSPrivacyCollectedDataTypePurposes": [
+        "NSPrivacyCollectedDataTypePurposeAppFunctionality"
+      ]
+    },
+    {
+      "NSPrivacyCollectedDataType": "NSPrivacyCollectedDataTypeLocation",
+      "NSPrivacyCollectedDataTypeLinked": false,
+      "NSPrivacyCollectedDataTypeTracking": false,
+      "NSPrivacyCollectedDataTypePurposes": [
+        "NSPrivacyCollectedDataTypePurposeAppFunctionality"
+      ]
+    }
+  ],
+  "NSPrivacyAccessedAPITypes": [
+    {
+      "NSPrivacyAccessedAPIType": "NSPrivacyAccessedAPICategoryUserDefaults",
+      "NSPrivacyAccessedAPITypeReasons": [
+        "CA92.1"
+      ]
+    }
+  ]
+}

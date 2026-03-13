@@ -1,0 +1,38 @@
+{
+  "defaultPrice": "£2.99",
+  "priceRangeMin": "£1.99",
+  "priceRangeMax": "£4.99",
+  "priceTierMin": 1,
+  "priceTierMax": 6,
+  "products": [
+    {
+      "id": "monthly",
+      "name": "Premium Monthly",
+      "price": "£2.99",
+      "priceTier": 2,
+      "productID": "com.pollenhealth.symptomtracker.premium.monthly",
+      "features": [
+        "Unlimited symptom logging",
+        "Trend charts (7/14/30 days)",
+        "Export data to CSV",
+        "High pollen alerts",
+        "Ad-free experience"
+      ],
+      "isAnnual": false
+    },
+    {
+      "id": "yearly",
+      "name": "Premium Yearly",
+      "price": "£24.99",
+      "priceTier": 15,
+      "productID": "com.pollenhealth.symptomtracker.premium.yearly",
+      "features": [
+        "All Monthly features",
+        "Save 30% vs monthly",
+        "Priority support",
+        "Early access to new features"
+      ],
+      "isAnnual": true
+    }
+  ]
+}
