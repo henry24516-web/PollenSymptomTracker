@@ -63,7 +63,7 @@ jobs:
           xcodebuild -project PollenSymptomTracker.xcodeproj \
             -scheme PollenSymptomTracker \
             -configuration Debug \
-            -destination ""Any iOS Device""
+            -destination "platform=iOS Device"
             build
 
       - name: Build the project (Release)
@@ -71,7 +71,7 @@ jobs:
           xcodebuild -project PollenSymptomTracker.xcodeproj \
             -scheme PollenSymptomTracker \
             -configuration Release \
-            -destination ""Any iOS Device""
+            -destination "platform=iOS Device"
             build
 
   test:
@@ -122,7 +122,7 @@ jobs:
           xcodebuild -project PollenSymptomTracker.xcodeproj \
             -scheme PollenSymptomTracker \
             -configuration Debug \
-            -destination ""Any iOS Device""
+            -destination "platform=iOS Device"
             test
 
   archive:
@@ -199,7 +199,7 @@ jobs:
             -scheme PollenSymptomTracker \
             -configuration Release \
             -archivePath build/PollenSymptomTracker.xcarchive \
-            -destination ""Any iOS Device""
+            -destination "platform=iOS Device"
             archive
 
       - name: Export to IPA
