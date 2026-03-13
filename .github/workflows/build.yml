@@ -28,11 +28,11 @@ jobs:
             brew install xcodegen
           fi
 
-      - name: Generate Xcode project
       - name: Debug - list files
-        run: ls -la && cat project.yml
-        run: |
-          xcodegen generate 2&1
+        run: ls -la && cat project.yml || echo "no project.yml"
+
+      - name: Generate Xcode project
+        run: xcodegen generate
 
       - name: Build the project (Debug)
         run: |
