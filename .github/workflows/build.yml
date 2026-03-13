@@ -29,8 +29,10 @@ jobs:
           fi
 
       - name: Generate Xcode project
+      - name: Debug - list files
+        run: ls -la && cat project.yml
         run: |
-          xcodegen generate
+          xcodegen generate 2&1
 
       - name: Build the project (Debug)
         run: |
