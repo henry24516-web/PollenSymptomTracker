@@ -29,7 +29,8 @@ jobs:
           fi
 
       - name: Generate Xcode project
-        run: xcodegen generate
+        run: |
+          xcodegen generate
 
       - name: Build the project (Debug)
         run: |
