@@ -52,7 +52,7 @@ jobs:
 
       - name: Build the project (Debug)
         run: |
-          xcodebuild -project PollenSymptomTracker.xcodeproj \
+          xcodebuild CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO -project PollenSymptomTracker.xcodeproj \
             -scheme PollenSymptomTracker \
             -configuration Debug \
             -destination 'generic/platform=iOS' \
@@ -60,7 +60,7 @@ jobs:
 
       - name: Build the project (Release)
         run: |
-          xcodebuild -project PollenSymptomTracker.xcodeproj \
+          xcodebuild CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO -project PollenSymptomTracker.xcodeproj \
             -scheme PollenSymptomTracker \
             -configuration Release \
             -destination 'generic/platform=iOS' \
