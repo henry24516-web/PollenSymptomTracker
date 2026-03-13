@@ -2,7 +2,7 @@ name: PollenSymptomTracker
 options:
   bundleIdPrefix: com.pollenhealth
   deploymentTarget:
-    iOS: "16.0"
+    iOS: "18.0"
   xcodeVersion: "15.0"
 
 settings:
