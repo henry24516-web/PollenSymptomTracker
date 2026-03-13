@@ -14,14 +14,14 @@ class StorageService {
     private let defaults = UserDefaults.standard
     
     // Storage keys - using app-specific prefix to avoid conflicts
-    private let appPrefix = "com.pollenhealth.symptomtracker."
-    private let symptomLogsKey = appPrefix + "symptom_logs"
-    private let subscriptionStateKey = appPrefix + "subscription_state"
-    private let lastPollenDataKey = appPrefix + "last_pollen_data"
-    private let userLocationKey = appPrefix + "user_location"
-    private let onboardingCompletedKey = appPrefix + "onboarding_completed"
-    private let notificationPrefsKey = appPrefix + "notification_prefs"
-    private let storageVersionKey = appPrefix + "storage_version"
+    private static let appPrefix = "com.pollenhealth.symptomtracker."
+    private let symptomLogsKey = Self.appPrefix + "symptom_logs"
+    private let subscriptionStateKey = Self.appPrefix + "subscription_state"
+    private let lastPollenDataKey = Self.appPrefix + "last_pollen_data"
+    private let userLocationKey = Self.appPrefix + "user_location"
+    private let onboardingCompletedKey = Self.appPrefix + "onboarding_completed"
+    private let notificationPrefsKey = Self.appPrefix + "notification_prefs"
+    private let storageVersionKey = Self.appPrefix + "storage_version"
     
     // Current storage schema version
     private let currentStorageVersion = 2
