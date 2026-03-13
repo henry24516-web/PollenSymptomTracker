@@ -8,12 +8,12 @@ on:
   workflow_dispatch:
 
 env:
-  DEVELOPER_DIR: /Applications/Xcode_15.4.app/Contents/Developer
+  DEVELOPER_DIR: /Applications/Xcode_16.app/Contents/Developer
 
 jobs:
   build:
     name: Build and Test
-    runs-on: macos-14
+    runs-on: macos-15
 
     steps:
       - name: Checkout repository
@@ -76,7 +76,7 @@ jobs:
 
   test:
     name: Run Unit Tests
-    runs-on: macos-14
+    runs-on: macos-15
     needs: build
 
     steps:
@@ -127,7 +127,7 @@ jobs:
 
   archive:
     name: Build for Archive (Requires Secrets)
-    runs-on: macos-14
+    runs-on: macos-15
     needs: [build, test]
     if: github.event_name == 'push' && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/develop')
     permissions:
