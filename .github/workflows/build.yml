@@ -36,7 +36,7 @@ jobs:
 
       - name: Build the project (Debug)
         run: |
-          xcodebuild -project PollenSymptomTracker.xcodeproj \
+          xcodebuild -project PollenSymptomTracker/PollenSymptomTracker.xcodeproj \
             -scheme PollenSymptomTracker \
             -configuration Debug \
             -destination 'generic/platform=iOS Simulator' \
@@ -45,7 +45,7 @@ jobs:
 
       - name: Build the project (Release)
         run: |
-          xcodebuild -project PollenSymptomTracker.xcodeproj \
+          xcodebuild -project PollenSymptomTracker/PollenSymptomTracker.xcodeproj \
             -scheme PollenSymptomTracker \
             -configuration Release \
             -destination 'generic/platform=iOS Simulator' \
